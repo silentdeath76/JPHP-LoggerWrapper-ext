@@ -5,7 +5,7 @@
 
 Use example:
 
-In module
+Code in module:
 ```php
 /**
  * @event loggerWrapper.error 
