@@ -4,6 +4,8 @@
 
 
 Use example:
+
+In module
 ```php
 /**
  * @event loggerWrapper.error 
@@ -14,4 +16,9 @@ function doLoggerWrapperError(ScriptEvent $e = null)
         Logger::error($e->message);
     }
 }
+```
+
+Trigger events:
+```php
+$this->loggerWrapper->error("Test message!");
 ```
