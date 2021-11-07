@@ -1,0 +1,27 @@
+<element extends="ide\scripts\elements\AbstractComponent">
+    <init>
+        <!-- init default value public var's -->
+        <property code="filename" value="./app.log"/>
+        <property code="dateFormat" value="MM/dd/YYYY HH:mm:ss"/>
+        <property code="lineFormat" value=":date [:event] :message"/>
+    </init>
+
+    <properties>
+        <property code="filename" name="Имя лог файла" editor="text" tooltip="Имя лог файла"/>
+        <property code="autoWrite" name="Автозапись" editor="boolean" tooltip="Записывать данные в файл"/>
+    </properties>
+
+    <properties group="binding" title="Форматирование" sort="1500">
+        <!-- fields for public var's -->
+        <property code="dateFormat" name="Формат даты" editor="text" tooltip="Формат даты"/>
+        <property code="lineFormat" name="Формат стоки" editor="text" tooltip="Формат строки (:date :event :message)"/>
+    </properties>
+
+    <eventTypes>
+        <!--events-->
+        <eventType code="error" name="Error" kind="ObjectEvent"/>
+        <eventType code="warning" name="Warning" kind="ObjectEvent"/>
+        <eventType code="debug" name="Debug" kind="ObjectEvent"/>
+        <eventType code="info" name="Info" kind="ObjectEvent"/>
+    </eventTypes>
+</element>
