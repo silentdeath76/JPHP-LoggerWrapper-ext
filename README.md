@@ -1,4 +1,4 @@
-# JPHP-LoggerWrapper-ext
+# dn-LoggerWrapper-ext
 
 ![View](https://github.com/silentdeath76/JPHP-LoggerWrapper-ext/blob/main/images/main.png?raw=true)
 
